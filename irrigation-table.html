@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Irrigation Table</title><style>
+body { font-family: Arial, sans-serif; background-color: #f0fff0; margin: 0; }
+h1, h2 { color: darkgreen; }
+header { background-color: green; color: white; text-align: center; padding: 15px; }
+nav { background-color: green; }
+nav ul { list-style-type: none; margin: 0; padding: 0; }
+nav ul li { display: inline-block; }
+nav ul li a { display: inline-block; padding: 10px 15px; color: white; text-decoration: none; }
+nav ul li a:hover { background-color: darkgreen; color: yellow; }
+footer { background-color: darkgreen; color: white; text-align: center; padding: 10px; clear: both; }
+.sidebar { float: left; width: 20%; background-color: #e6ffe6; padding: 10px; box-sizing: border-box; }
+.content { float: left; width: 75%; padding: 10px; box-sizing: border-box; }
+aside { border: 1px solid green; box-shadow: 3px 3px 6px gray; padding: 10px; border-radius: 8px; width: 200px; background-color: white; }
+aside ul { list-style-type: none; padding-left: 0; }
+aside li { padding: 6px; }
+aside li:hover { background-color: lightgreen; }
+.plot-card { display: inline-block; width: 200px; margin: 10px; padding: 10px; border: 1px solid gray; background-color: white; box-shadow: 2px 2px 5px gray; text-align: center; }
+figure img { width: 250px; height: 180px; border: 2px solid green; margin: 10px; transition: transform 0.3s; }
+figure img:hover { transform: scale(1.2); }
+figure { display: inline-block; text-align: center; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid black; padding: 8px; text-align: center; }
+th { background-color: green; color: white; }
+tr:nth-child(even) { background-color: #e6ffe6; }
+fieldset { border: 2px solid green; border-radius: 8px; padding: 15px; width: 300px; }
+legend { color: darkgreen; font-weight: bold; }
+input, select { width: 250px; padding: 5px; margin: 5px 0; border-radius: 4px; border: 1px solid gray; }
+input:focus { border: 2px solid green; }
+button { background-color: green; color: white; padding: 8px 15px; border: none; border-radius: 5px; }
+button:hover { background-color: darkgreen; }
+.alert-box { background-color: yellow; padding: 15px; font-size: 20px; text-shadow: 1px 1px 2px red; box-shadow: 0 0 10px red; animation: blink 1s infinite; }
+@keyframes blink { 50% { opacity: 0.3; } }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Soil Moisture & Irrigation Table</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="irrigation-table.html">Sensor Data</a></li>
+    </ul>
+</nav>
+
+<table>
+    <caption>Irrigation Recommendation for Plots</caption>
+    <thead>
+        <tr>
+            <th>Plot ID</th>
+            <th>Farmer Name</th>
+            <th>Soil Moisture (%)</th>
+            <th>Weather</th>
+            <th>Irrigation Recommendation</th>
+            <th>Water Requirement</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Plot-11</td>
+            <td>Ramesh Patil</td>
+            <td>22.4</td>
+            <td>Partly Cloudy</td>
+            <td>Irrigate Today</td>
+            <td>18.6 mm</td>
+        </tr>
+        <tr>
+            <td>Plot-12</td>
+            <td>Suresh Kadam</td>
+            <td>35.0</td>
+            <td>Rain Expected</td>
+            <td>Skip Irrigation</td>
+            <td>0 mm</td>
+        </tr>
+        <tr>
+            <td>Plot-13</td>
+            <td>Vitthal More</td>
+            <td>18.2</td>
+            <td>Sunny</td>
+            <td>Irrigate Today</td>
+            <td>22 mm</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="5">Total Plots Monitored</td>
+            <td>3</td>
+        </tr>
+    </tfoot>
+</table>
+
+<footer>
+    <p>&copy; 2026 KIAAR - Godavari Biorefineries Ltd.</p>
+</footer>
+
+</body>
+</html>
